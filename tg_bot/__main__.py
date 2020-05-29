@@ -17,10 +17,19 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
+░▐█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█▄☆
+░███████████████████████
+░▓▓▓▓▓▓▓▓▓▓▓▓██▓▓▓▓▓▓▓▓◤
+╬▀░▐▓▓▓▓▓▓▌▀█░░░█▀░
+▒░░▓▓▓▓▓▓█▄▄▄▄▄█▀╬░
+░░█▓▓▓▓▓▌░▒▒▒▒▒▒▒▒▒
+░▐█▓▓▓▓▓░░▒▒▒▒▒▒▒▒▒
+░▐██████▌╬░▒▒▒▒▒▒▒▒
+
 Hi {}, my name is {}!
  
 I am an Ai powered group management bot maintained by :
-⏥⏥ ▰ ▱𝙍𝘼𝘽𝘽𝙄𝙏▱ ▰ ⏥⏥
+[⏥⏥ ▰ ▱𝙍𝘼𝘽𝘽𝙄𝙏▱ ▰ ⏥⏥](https://t.me/Mr_Hops)
 
 To add me to your group click ["HERE"](t.me/Thepgirlbot?startgroup=botstart)
 You can find my list of available commands with /help.
