@@ -8,7 +8,7 @@ from tg_bot.modules.helper_funcs.chat_status import user_admin
 #sleep how many times after each edit in 'police' 
 EDIT_SLEEP = 2
 #edit how many times in 'police' 
-EDIT_TIMES = 3
+EDIT_TIMES = 8
 
 police_siren = [
             "🔴🔴🔴⬜️⬜️⬜️🔵🔵🔵\n🔴🔴🔴⬜️⬜️⬜️🔵🔵🔵\n🔴🔴🔴⬜️⬜️⬜️🔵🔵🔵",
