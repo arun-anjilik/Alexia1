@@ -66,7 +66,7 @@ USER_SETTINGS = {}
 
 START_IMG = os.environ.get('START_IMG', None)
 if START_IMG is None:
-    img = "https://telegra.ph/file/66d8850975e5f437c202f.jpg"
+    img = "https://telegra.ph/file/5a74133b1ebba9986fba1.jpg"
 else:
   img = START_IMG    
     
