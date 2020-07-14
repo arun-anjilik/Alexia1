@@ -17,19 +17,10 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-░▐█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█▄☆
-░███████████████████████
-░▓▓▓▓▓▓▓▓▓▓▓▓██▓▓▓▓▓▓▓▓◤
-╬▀░▐▓▓▓▓▓▓▌▀█░░░█▀░
-▒░░▓▓▓▓▓▓█▄▄▄▄▄█▀╬░
-░░█▓▓▓▓▓▌░▒▒▒▒▒▒▒▒▒
-░▐█▓▓▓▓▓░░▒▒▒▒▒▒▒▒▒
-░▐██████▌╬░▒▒▒▒▒▒▒▒
-
 Hi {}, my name is {}!
  
 I am an Ai powered group management bot maintained by :
-[⏥⏥ ▰ ▱𝙍𝘼𝘽𝘽𝙄𝙏▱ ▰ ⏥⏥](https://t.me/Mr_Hops)
+[𐎓𝄓𝞒𝞓𝞑𝞑𝞘𝞣𐎓𝄓](https://t.me/Mr_Hops)
 
 To add me to your group click ["HERE"](t.me/Thepgirlbot?startgroup=botstart)
 You can find my list of available commands with /help.
@@ -71,6 +62,13 @@ DATA_EXPORT = []
 
 CHAT_SETTINGS = {}
 USER_SETTINGS = {}
+
+START_IMG = os.environ.get('START_IMG', None)
+if START_IMG is None:
+    img = "https://telegra.ph/file/66d8850975e5f437c202f.jpg"
+else:
+  img = START_IMG    
+    
 
 for module_name in ALL_MODULES:
     imported_module = importlib.import_module("tg_bot.modules." + module_name)
@@ -147,8 +145,8 @@ def start(bot: Bot, update: Update, args: List[str]):
 
         else:
             first_name = update.effective_user.first_name
-            update.effective_message.reply_text(
-                PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), SUPPORT_CHAT),
+            update.effective_message.reply_photo(
+                img, PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), SUPPORT_CHAT),
                 parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
     else:
         update.effective_message.reply_text("Yo, whazzup?")
