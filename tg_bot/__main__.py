@@ -25,13 +25,7 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 PM_START_TEXT = """
 Hi {}, my name is {}!
  
-I am an Ai powered group management bot maintained by :
-[𐎓𝄓𝞒𝞓𝞑𝞑𝞘𝞣𐎓𝄓](https://t.me/Mr_Hops)
-
-To add me to your group click ["HERE"](t.me/Thepgirlbot?startgroup=botstart)
-You can find my list of available commands with /help.
-
-The support group chat is at {}.
+I am an Ai powered group management bot maintained by : [𐎓𝄓𝞒𝞓𝞑𝞑𝞘𝞣𐎓𝄓](https://t.me/Mr_Hops)
 """
 
 HELP_STRINGS = """
