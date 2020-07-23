@@ -145,8 +145,8 @@ def start(bot: Bot, update: Update, args: List[str]):
 
         else:
             first_name = update.effective_user.first_name
-            keyboard = [[InlineKeyboardButton(text="🖥️ Help",callback_data="help_back"),InlineKeyboardButton(text="💻 Creator",url="https://t.me/Mr_Hops")]]
-            keyboard += [[InlineKeyboardButton(text="🌎 Support Group",url="https://t.me/joinchat/JtIgvUuhHJmIzctx6iJvtg"),InlineKeyboardButton(text="📲 Add Me",url="t.me/{}?startgroup=true".format(bot.username))]]
+            keyboard = [[InlineKeyboardButton(text="🖥️ 𝜢𝚺𝑳𝜬",callback_data="help_back"),InlineKeyboardButton(text="💻 𝑪𝜞𝜠𝜦𝜯𝜪𝜞",url="https://t.me/Mr_Hops")]]
+            keyboard += [[InlineKeyboardButton(text="🌎 𝑺𝑼𝜬𝜬𝜪𝜞𝜯 𝑮𝜞𝜪𝑼𝜬",url="https://t.me/Mr_Hops"),InlineKeyboardButton(text="📲 𝜦𝑫𝑫 𝜧𝚺",url="t.me/{}?startgroup=true".format(bot.username))]]
 
             update.effective_message.reply_photo(
                 img, PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), SUPPORT_CHAT),
